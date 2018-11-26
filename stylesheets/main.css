@@ -1,0 +1,148 @@
+.jumbotron {
+  text-align: center;
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  background-position: right top;
+  background-attachment: fixed;
+  color: black;
+  margin-bottom: 0;
+  min-height: 100vh;
+}
+@media screen and (max-width: 645px) {
+  .jumbotron {
+    background-size: auto 100vh;
+    background-attachment: scroll;
+  }
+}
+header {
+  background: rgba(255, 255, 255, 0.3);
+  padding-top: 10px;
+  text-align: center;
+  margin-top: -40px;
+}
+header p {
+  font-family: 'Indie Flower', cursive;
+  font-size: 48px;
+  padding-top: 20px;
+}
+/*nav bar, collapses to drop down menu in smaller browsers*/
+.nav {
+  background: rgba(255, 255, 255, 0.3);
+  overflow: hidden;
+  display: block;
+}
+.nav a {
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  font-family: 'Indie Flower', cursive;
+  color: black;
+  font-size: 30px;
+  line-height: 48px;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+}
+.nav a:hover {
+  background: white;
+}
+.nav .icon {
+    display: none;
+    padding: 0 15px 0 15px;
+}
+/*adjust max-width to minimum width of nav to prevent overflow*/
+@media screen and (max-width: 645px) {
+  .nav a {
+      display: none;
+    }
+    .nav {
+      padding: 0;
+    }
+    .nav a.icon {
+      float: right;
+      display: block;
+    }
+  .nav.responsive {
+    position: relative;
+  }
+  .nav.responsive a.icon {
+    position:absolute;
+    right:0;
+    top:0;
+  }
+  .nav.responsive a {
+    float:none;
+    display: block;
+    text-align: left;
+  }
+}
+/*content section*/
+.container {
+  background: rgba(255, 255, 255, 0.6);
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 5px;
+  padding: 20px 40px 20px 40px;
+  font-family: 'Indie Flower', cursive;
+  font-size: 24px;
+  text-align: left;
+  line-height: 30px;
+}
+@media screen and (max-width: 645px) {
+  .container {
+    width: 95%;
+  }
+}
+.intro {
+  margin-top: 10px;
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 40px;
+  line-height: 40px;
+}
+.signoff {
+  text-align: right;
+  font-size: 40px;
+}
+/*footer with social media share buttons*/
+.footer {
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: -60px;
+}
+.footer .fa {
+    padding: 5px;
+    margin: 10px;
+    font-size: 32px;
+    width: 45px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20%;
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 1);
+  border: solid 2px rgba(255, 255, 255, 0.7);
+}
+.footer .fa:hover {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+}
+.fa-facebook:hover {
+  background: rgba(59,89,152,1);
+  border: solid 2px rgba(59,89,152,1);
+}
+.fa-pinterest:hover {
+  background: rgba(201,34,40,1);
+  border: solid 2px rgba(201,34,40,1);
+}
+.fa-twitter:hover {
+  background: rgba(0, 172, 237,1);
+  border: solid 2px rgba(0, 172, 237,1);
+}
+.fa-envelope:hover {
+  background: rgba(112,128,144,1);
+  border: solid 2px rgba(112,128,144,1);
+}
