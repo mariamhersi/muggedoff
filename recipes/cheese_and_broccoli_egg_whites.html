@@ -2,8 +2,9 @@
 <html>
 	<head>
 		<title>Mugged Off - a collection of recipes in a mug</title>
-		<link href='bootstrap/css/bootstrap.css' rel='stylesheet'>
+		<link href='../bootstrap/css/bootstrap.css' rel='stylesheet'>
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 			<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
 			<link type="text/css" rel="stylesheet" href="../stylesheets/main.css">
 			<link type="text/css" rel="stylesheet" href="../stylesheets/recipes.css">
@@ -13,12 +14,12 @@
 			<header>
 				<p>Mugged Off</p>
 				<div class="nav" id="nav">
-					<a href="index.html">Home</a>
-					<a href="breakfast.html">Breakfast</a>
-					<a href="lunch.html">Lunch</a>
-					<a href="dessert.html">Dessert</a>
-					<a href="contact.html">Contact us</a>
-					<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+				<a href="../index.html">Home</a>
+				<a href="../breakfast.html">Breakfast</a>
+				<a href="../lunch.html">Lunch</a>
+				<a href="../dessert.html">Dessert</a>
+				<a href="../contact.html">Contact us</a>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
 			</div>
 		</header>
 		<div class="container">
@@ -131,14 +132,6 @@
 									</p>
 								</div>
 							</div>
-							<div class="collapse" id="collapse-timer">
-								<p>
-								<input type="text" id="minutes" placeholder="min"/><strong> :</strong>
-							    <input type="text" id="seconds" placeholder="sec"/><br>
-							    <input type="button" value="Start" onclick="startTimer()" />
-							    <input type="button" value="Stop" onclick="clearInterval(interval)"/>
-							    <input type="button" value="Reset" onclick="resetTimer()" />
-							    <div id="output"></div>
 								</p>
 							</div>
 						</div>
@@ -148,8 +141,12 @@
 
 
 
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+			<script src="../javascript/nav.js"></script>
 			<script src="../javascript/converters.js"></script>
-			<script src=".../javascript/nav.js"></script>
+			<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 		</div>
 		</body>
 </html>
