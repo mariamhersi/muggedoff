@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mugged Off - a collection of recipes in a mug</title>
+		<link href='bootstrap/css/bootstrap.css' rel='stylesheet'>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+			<link type="text/css" rel="stylesheet" href="../stylesheets/main.css">
+			<link type="text/css" rel="stylesheet" href="../stylesheets/recipes.css">
+	</head>
+	<body>
+		<div class="jumbotron jumbotron-fluid">
+			<header>
+				<p>Mugged Off</p>
+				<div class="nav" id="nav">
+					<a href="index.html">Home</a>
+					<a href="breakfast.html">Breakfast</a>
+					<a href="lunch.html">Lunch</a>
+					<a href="dessert.html">Dessert</a>
+					<a href="contact.html">Contact us</a>
+					<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+			</div>
+		</header>
+		<div class="container">
+			<div class="intro">Strawberry Banana Baked Oatmeal</div>
+				<div class="row">
+					<div class="col-12 col-md-8 content">
+						<img src="../images/strawberry_banana.png">
+						<p>Ingredients:</p>
+						<p class="table">
+							<table>
+							<tbody>
+								<tr>
+									<td>1/2 Cup </td>
+									<td>Old Fashioned Oats</td>
+								</tr>
+								<tr>
+									<td>1 Teaspoon</td>
+									<td>White Sugar</td>
+								</tr>
+								<tr>
+									<td>1/4 Teaspoon</td>
+									<td>Baking Powder</td>
+								</tr>
+								<tr>
+									<td>Dash of Salt</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>1/2 Medium Banana</td>
+									<td></td>
+								</tr>
+                <tr>
+                  <td>1</td>
+                  <td>Egg</td>
+                </tr>
+                <tr>
+                  <td>3 Tablespoons</td>
+                  <td>Milk (any kind)</td>
+                </tr>
+                <tr>
+                  <td>1/4 Teaspoon</td>
+                  <td>Vanilla Extract</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Medium Strawberries</td>
+                </tr>
+							</tbody>
+						</table>
+						</p>
+							<p>
+								Steps: <br><br>
+								1.	Coat a large, microwavable mug or small bowl with cooking spray. <br><br>
+								2.	Add oats, sugar, baking powder, and salt to mug. Stir to combine. <br><br>
+								3.	Add banana, egg, milk, and vanilla extract to oats. Stir until mixed in.<br><br>
+								4.	Gently fold in strawberries. <br><br>
+								5.	Microwave on medium power for 3-3 1/2 minutes, or until centre is mostly set. Let stand in microwave for one minute. <br><br>
+							</p>
+						</div>
+
+<div class="col-12 col-md-4">
+						<div class="converter">
+							<div id="toolbar">
+								<a class="icon fa fa-balance-scale" data-toggle="collapse" href="#collapse-weight" aria-expanded="false" aria-controls="collapse-weight" aria-hidden="true"><span class="tip">weight converter</span></a>
+								<a class="icon ti-paint-bucket" data-toggle="collapse" href="#collapse-volume" aria-expanded="false" aria-controls="collapse-volume" aria-hidden="true"><span class="tip">volume converter</span></a>
+								<a class="icon fa fa-thermometer-quarter" data-toggle="collapse" href="#collapse-temp" aria-expanded="false" aria-controls="collapse-temp" aria-hidden="true"><span class="tip">temperature converter</span></a>
+								<a class="icon ti-alarm-clock" data-toggle="collapse" href="#collapse-timer" aria-expanded="false" aria-controls="collapse-timer" aria-hidden="true"><span class="tip">timer</span></a>
+							</div>
+							<div class="collapse" id="collapse-weight">
+								<p>Weight converions:</p>
+								<div class="form">
+									<p>
+										<label>Pounds</label>
+										<input id="inputPounds" type="number" oninput="weightConverter(this.id,this.value)" onchange="weightConverter(this.id,this.value)">
+									</p>
+									<p>
+										<label>Kilograms</label>
+										<input id="inputKilograms" type="number" oninput="weightConverter(this.id,this.value)" onchange="weightConverter(this.id,this.value)">
+									</p>
+									<p>
+										<label>Ounces</label>
+										<input id="inputOunces" oninput="weightConverter(this.id,this.value)" onchange="weightConverter(this.id,this.value)">
+									</p>
+									<p>
+										<label>Grams</label>
+										<input id="inputGrams" type="number" oninput="weightConverter(this.id,this.value)" onchange="weightConverter(this.id,this.value)">
+									</p>
+								</div>
+							</div>
+							<div class="collapse" id="collapse-volume">
+								<p>Enter the volumes you would like to convert:</p>
+								<div class="form">
+									<p>
+										<label>liters</label>
+										<input id="inputLiters" type="number" oninput="volumeConverter(this.id,this.value)" onchange="volumeConverter(this.id,this.value)">
+									</p>
+									<p>
+										<label>Milliliters</label>
+										<input id="inputMl" type="number" oninput="volumeConverter(this.id,this.value)" onchange="volumeConverter(this.id,this.value)">
+									</p>
+									<p>
+										<label>fluid Ounces</label>
+										<input id="inputFlOunces" oninput="volumeConverter(this.id,this.value)" onchange="volumeConverter(this.id,this.value)">
+									</p>
+									<p>
+										<label>pints (UK)</label>
+										<input id="inputPints" type="number" oninput="volumeConverter(this.id,this.value)" onchange="volumeConverter(this.id,this.value)">
+									</p>
+									<p>
+										<label>cups (US)</label>
+										<input id="inputCups" type="number" oninput="volumeConverter(this.id,this.value)" onchange="volumeConverter(this.id,this.value)">
+									</p>
+								</div>
+							</div>
+							<div class="collapse" id="collapse-temp">
+								<p>Enter the temperature you would like to convert:</p>
+								<div class="form">
+									<p>
+									  <label>Fahrenheit</label>
+									  <input id="inputFahrenheit" type="number" oninput="temperatureConverter(this.id,this.value)" onchange="temperatureConverter(this.id,this.value)">
+									</p>
+									<p>
+									  <label>Celsius</label>
+									  <input id="inputCelsius" type="number" oninput="temperatureConverter(this.id,this.value)" onchange="temperatureConverter(this.id,this.value)">
+									</p>
+								</div>
+							</div>
+							<div class="collapse" id="collapse-timer">
+								<p>
+								<input type="text" id="minutes" placeholder="min"/><strong> :</strong>
+							    <input type="text" id="seconds" placeholder="sec"/><br>
+							    <input type="button" value="Start" onclick="startTimer()" />
+							    <input type="button" value="Stop" onclick="clearInterval(interval)"/>
+							    <input type="button" value="Reset" onclick="resetTimer()" />
+							    <div id="output"></div>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+			<script src="../javascript/converters.js"></script>
+			<script src=".../javascript/nav.js"></script>
+		</div>
+		</body>
+</html>
