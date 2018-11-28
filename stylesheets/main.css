@@ -21,7 +21,7 @@ header {
   margin-top: -40px;
 }
 header p {
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Karla', sans-serif;
   font-size: 48px;
   padding-top: 20px;
 }
@@ -34,7 +34,7 @@ header p {
 .nav a {
   padding: 10px 20px 10px 20px;
   text-decoration: none;
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Karla', sans-serif;
   color: black;
   font-size: 30px;
   line-height: 48px;
@@ -82,7 +82,7 @@ header p {
   margin-top: 20px;
   border-radius: 5px;
   padding: 20px 40px 20px 40px;
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Karla', sans-serif;
   font-size: 24px;
   text-align: left;
   line-height: 30px;
