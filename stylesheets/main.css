@@ -142,3 +142,7 @@ header p {
   background: rgba(0, 172, 237,1);
   border: solid 2px rgba(0, 172, 237,1);
 }
+
+.text-center {
+  text-align:center;
+}
