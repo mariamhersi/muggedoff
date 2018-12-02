@@ -120,13 +120,13 @@ header p {
     text-align: center;
     text-decoration: none;
     border-radius: 20%;
-  background: rgba(255, 255, 255, 0.1);
-  color: rgba(255, 255, 255, 1);
-  border: solid 2px rgba(255, 255, 255, 0.7);
+  background: rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 1);
+  border: solid 2px rgba(0, 0, 0, 0.7);
 }
 .footer .fa:hover {
   text-decoration: none;
-  color: rgba(255, 255, 255, 1);
+  color: rgba(198, 198, 198, 1);
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
 }
@@ -141,8 +141,4 @@ header p {
 .fa-twitter:hover {
   background: rgba(0, 172, 237,1);
   border: solid 2px rgba(0, 172, 237,1);
-}
-.fa-envelope:hover {
-  background: rgba(112,128,144,1);
-  border: solid 2px rgba(112,128,144,1);
 }

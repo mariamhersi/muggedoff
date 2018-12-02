@@ -3,9 +3,10 @@
 	<head>
 		<title>Mugged Off - a collection of recipes in a mug</title>
 		<link href='../bootstrap/css/bootstrap.css' rel='stylesheet'>
-			<meta name="viewport" content="width=device-width, initial-scale=1.0">
-			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
 			<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+			<link rel="stylesheet" href="../icons/font-awesome/css/font-awesome.min.css">
+			<link rel="stylesheet" href="../icons/themify/themify-icons.css">
 			<link type="text/css" rel="stylesheet" href="../stylesheets/main.css">
 			<link type="text/css" rel="stylesheet" href="../stylesheets/recipes.css">
 	</head>
@@ -65,81 +66,93 @@
 							</p>
 						</div>
 
-<div class="col-12 col-md-4">
-						<div class="converter">
-							<div id="toolbar">
-								<a class="icon fa fa-balance-scale" data-toggle="collapse" href="#collapse-weight" aria-expanded="false" aria-controls="collapse-weight" aria-hidden="true"><span class="tip">weight converter</span></a>
-								<a class="icon ti-paint-bucket" data-toggle="collapse" href="#collapse-volume" aria-expanded="false" aria-controls="collapse-volume" aria-hidden="true"><span class="tip">volume converter</span></a>
-								<a class="icon fa fa-thermometer-quarter" data-toggle="collapse" href="#collapse-temp" aria-expanded="false" aria-controls="collapse-temp" aria-hidden="true"><span class="tip">temperature converter</span></a>
-								<a class="icon ti-alarm-clock" data-toggle="collapse" href="#collapse-timer" aria-expanded="false" aria-controls="collapse-timer" aria-hidden="true"><span class="tip">timer</span></a>
-							</div>
-							<div class="collapse" id="collapse-weight">
-								<p>Weight converions:</p>
-								<div class="form">
-									<p>
-										<label>Pounds</label>
-										<input id="inputPounds" type="number" oninput="weightConverter(this.id,this.value)" onchange="weightConverter(this.id,this.value)">
-									</p>
-									<p>
-										<label>Kilograms</label>
-										<input id="inputKilograms" type="number" oninput="weightConverter(this.id,this.value)" onchange="weightConverter(this.id,this.value)">
-									</p>
-									<p>
-										<label>Ounces</label>
-										<input id="inputOunces" oninput="weightConverter(this.id,this.value)" onchange="weightConverter(this.id,this.value)">
-									</p>
-									<p>
-										<label>Grams</label>
-										<input id="inputGrams" type="number" oninput="weightConverter(this.id,this.value)" onchange="weightConverter(this.id,this.value)">
-									</p>
-								</div>
-							</div>
-							<div class="collapse" id="collapse-volume">
-								<p>Enter the volumes you would like to convert:</p>
-								<div class="form">
-									<p>
-										<label>liters</label>
-										<input id="inputLiters" type="number" oninput="volumeConverter(this.id,this.value)" onchange="volumeConverter(this.id,this.value)">
-									</p>
-									<p>
-										<label>Milliliters</label>
-										<input id="inputMl" type="number" oninput="volumeConverter(this.id,this.value)" onchange="volumeConverter(this.id,this.value)">
-									</p>
-									<p>
-										<label>fluid Ounces</label>
-										<input id="inputFlOunces" oninput="volumeConverter(this.id,this.value)" onchange="volumeConverter(this.id,this.value)">
-									</p>
-									<p>
-										<label>pints (UK)</label>
-										<input id="inputPints" type="number" oninput="volumeConverter(this.id,this.value)" onchange="volumeConverter(this.id,this.value)">
-									</p>
-									<p>
-										<label>cups (US)</label>
-										<input id="inputCups" type="number" oninput="volumeConverter(this.id,this.value)" onchange="volumeConverter(this.id,this.value)">
-									</p>
-								</div>
-							</div>
-							<div class="collapse" id="collapse-temp">
-								<p>Enter the temperature you would like to convert:</p>
-								<div class="form">
-									<p>
-									  <label>Fahrenheit</label>
-									  <input id="inputFahrenheit" type="number" oninput="temperatureConverter(this.id,this.value)" onchange="temperatureConverter(this.id,this.value)">
-									</p>
-									<p>
-									  <label>Celsius</label>
-									  <input id="inputCelsius" type="number" oninput="temperatureConverter(this.id,this.value)" onchange="temperatureConverter(this.id,this.value)">
-									</p>
-								</div>
-							</div>
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+						<div class="col-12 col-md-4">
+												<div class="converter">
+													<div id="toolbar">
+														<a class="icon fa fa-balance-scale" data-toggle="collapse" href="#collapse-weight" aria-expanded="false" aria-controls="collapse-weight" aria-hidden="true"><span class="tip">weight converter</span></a>
+														<a class="icon ti-paint-bucket" data-toggle="collapse" href="#collapse-volume" aria-expanded="false" aria-controls="collapse-volume" aria-hidden="true"><span class="tip">volume converter</span></a>
+														<a class="icon fa fa-thermometer-quarter" data-toggle="collapse" href="#collapse-temp" aria-expanded="false" aria-controls="collapse-temp" aria-hidden="true"><span class="tip">temperature converter</span></a>
+														<a class="icon ti-alarm-clock" data-toggle="collapse" href="#collapse-timer" aria-expanded="false" aria-controls="collapse-timer" aria-hidden="true"><span class="tip">timer</span></a>
+													</div>
+													<div class="collapse" id="collapse-weight">
+														<p>Weight converions:</p>
+														<div class="form">
+															<p>
+																<label>Pounds</label>
+																<input id="inputPounds" type="number" oninput="weightConverter(this.id,this.value)" onchange="weightConverter(this.id,this.value)">
+															</p>
+															<p>
+																<label>Kilograms</label>
+																<input id="inputKilograms" type="number" oninput="weightConverter(this.id,this.value)" onchange="weightConverter(this.id,this.value)">
+															</p>
+															<p>
+																<label>Ounces</label>
+																<input id="inputOunces" oninput="weightConverter(this.id,this.value)" onchange="weightConverter(this.id,this.value)">
+															</p>
+															<p>
+																<label>Grams</label>
+																<input id="inputGrams" type="number" oninput="weightConverter(this.id,this.value)" onchange="weightConverter(this.id,this.value)">
+															</p>
+														</div>
+													</div>
+													<div class="collapse" id="collapse-volume">
+														<p>Enter the volumes you would like to convert:</p>
+														<div class="form">
+															<p>
+																<label>liters</label>
+																<input id="inputLiters" type="number" oninput="volumeConverter(this.id,this.value)" onchange="volumeConverter(this.id,this.value)">
+															</p>
+															<p>
+																<label>Milliliters</label>
+																<input id="inputMl" type="number" oninput="volumeConverter(this.id,this.value)" onchange="volumeConverter(this.id,this.value)">
+															</p>
+															<p>
+																<label>fluid Ounces</label>
+																<input id="inputFlOunces" oninput="volumeConverter(this.id,this.value)" onchange="volumeConverter(this.id,this.value)">
+															</p>
+															<p>
+																<label>pints (UK)</label>
+																<input id="inputPints" type="number" oninput="volumeConverter(this.id,this.value)" onchange="volumeConverter(this.id,this.value)">
+															</p>
+															<p>
+																<label>cups (US)</label>
+																<input id="inputCups" type="number" oninput="volumeConverter(this.id,this.value)" onchange="volumeConverter(this.id,this.value)">
+															</p>
+														</div>
+													</div>
+													<div class="collapse" id="collapse-temp">
+														<p>Enter the temperature you would like to convert:</p>
+														<div class="form">
+															<p>
+															  <label>Fahrenheit</label>
+															  <input id="inputFahrenheit" type="number" oninput="temperatureConverter(this.id,this.value)" onchange="temperatureConverter(this.id,this.value)">
+															</p>
+															<p>
+															  <label>Celsius</label>
+															  <input id="inputCelsius" type="number" oninput="temperatureConverter(this.id,this.value)" onchange="temperatureConverter(this.id,this.value)">
+															</p>
+														</div>
+													</div>
+													<div class="collapse" id="collapse-timer">
+														<p>
+														<input type="text" id="minutes" placeholder="min"/><strong> :</strong>
+													    <input type="text" id="seconds" placeholder="sec"/><br>
+													    <input type="button" value="Start" onclick="startTimer()" />
+													    <input type="button" value="Stop" onclick="clearInterval(interval)"/>
+													    <input type="button" value="Reset" onclick="resetTimer()" />
+													    <div id="output"></div>
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
 
-
+			<div class="footer">
+				    		<a href="https://twitter.com/" class="fa fa-twitter"></a>
+				    		<a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+				    		<a href="" class="fa fa-pinterest"></a>
+				    	</div>
 
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 			<script src="../javascript/nav.js"></script>
