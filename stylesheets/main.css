@@ -105,7 +105,7 @@ header p {
   font-size: 40px;
 }
 /*footer with social media share buttons*/
-.footer1 {
+.footer {
   width: 100%;
   bottom: 0;
   left: 0;
@@ -113,7 +113,7 @@ header p {
   text-align: center;
   margin-bottom: 2px;
 }
-.footer1 .fa {
+.footer .fa {
     padding: 5px;
     margin: 10px;
     font-size: 32px;
@@ -125,7 +125,7 @@ header p {
   color: rgba(0, 0, 0, 1);
   border: solid 2px rgba(0, 0, 0, 0.7);
 }
-.footer1 .fa:hover {
+.footer .fa:hover {
   text-decoration: none;
   color: rgba(198, 198, 198, 1);
   -webkit-transition: 0.5s;
@@ -507,4 +507,11 @@ pre code {
 .tps-section:nth-child(4n+1) .tps-wrapper {
   background: url(https://www.budgetbytes.com/wp-content/uploads/2017/04/Microwave-French-Toast-Mug-fork.jpg) center center;
   background-size: cover;
+}
+
+.smalldescript {
+  color: rgba(255, 255, 255, 1);
+}
+.text-center {
+  color: rgba(0, 0, 0, 1);
 }
