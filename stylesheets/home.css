@@ -1,3 +1,6 @@
+.carousel-indicators {
+	bottom: -10px;
+}
 .signoff {
 	text-align: center;
 	font-size: 28px;
